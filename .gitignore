@@ -1,0 +1,43 @@
+# Secrets (only the placeholder templates are committed)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# SQLite runtime data (recreated and seeded on start-up)
+backend/app/data/*.db
+backend/app/data/*.db-*
+*.sqlite3
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# OS / editors / local tooling
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.claude/
+*.log
+
+# Unrelated archives in the workspace
+*.zip

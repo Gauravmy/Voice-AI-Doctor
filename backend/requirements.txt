@@ -1,0 +1,14 @@
+# Voice pipeline (Pipecat 1.17 with the services we use)
+#   google      -> GoogleLLMService (Gemini)
+#   elevenlabs  -> ElevenLabs STT + TTS
+#   silero      -> Silero VAD (turn detection)
+#   websocket   -> FastAPIWebsocketTransport
+pipecat-ai[google,elevenlabs,silero,websocket]==1.17.0
+
+# Web API
+fastapi==0.165.0
+uvicorn[standard]==0.54.0
+pydantic-settings==2.16.3
+
+# Windows has no system IANA timezone database
+tzdata>=2024.1
